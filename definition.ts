@@ -1,27 +1,27 @@
 import { defineComponentFramework } from "cypress";
 
-const dep: Cypress.CypressComponentDependency = {
+const reactFacetDep: Cypress.CypressComponentDependency = {
   // Unique, semantic identifier.
-  type: "template-name",
+  type: "@mojang/react-facet",
 
   // Human readable name.
-  name: "Dependency Name",
+  name: "React Facet",
 
   // Package name install from `npm`.
-  package: "dependency-name",
+  package: "@mojang/react-facet",
 
   /**
    * Similar to package, but can include a version or tag.
    * Used during setup to generate an install command for users.
    * Eg: `solid-js@next`
    */
-  installer: "dependency-name@^1.0.0",
+  installer: "@mojang/react-facet",
 
   // Human readable description.
-  description: "A required dependency for this project",
+  description: "React facetified",
 
   // Minimum supported version.
-  minVersion: "^1.0.0",
+  minVersion: "^0.0.13",
 };
 
 /**
@@ -34,18 +34,18 @@ export default defineComponentFramework({
    * by Cypress is `cypress-ct-*` for global packages, or
    * `@org/cypress-ct-*` for organization level packages.
    */
-  type: "cypress-ct-template",
+  type: "@mojang/cypress-ct-react-facet",
 
   /**
    * The label that shows up when configuring Component Testing
    * for the first time.
    */
-  name: "Example Dependency",
+  name: "React Facet",
 
   /**
    * Supported bundlers. Can be "webpack" and/or "vite".
    */
-  supportedBundlers: ["vite", "webpack"],
+  supportedBundlers: ["webpack"],
 
   /**
    * Used by Cypress to automatically detect the correct Framework Definition
@@ -54,13 +54,13 @@ export default defineComponentFramework({
    * is found in the user's project,
    * Solid.js will automatically be selected when configuring Component Testing.
    */
-  detectors: [dep],
+  detectors: [reactFacetDep],
 
   /**
    * Optionally, some conditional logic, based on whether
    * the user selected Vite or webpack.
    */
   dependencies: (bundler) => {
-    return [dep];
+    return [reactFacetDep];
   },
 });
