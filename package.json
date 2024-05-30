@@ -1,6 +1,6 @@
 {
   "name": "cypress-ct-react-facet",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Framework Definition adapter for Cypress Component Testing Using React Facet",
   "exports": {
     "node": "./definition.js",
