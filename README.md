@@ -1,4 +1,4 @@
-An simple Cypress Framework Definition for Projects using [React Facet](https://github.com/Mojang/ore-ui/tree/main/packages/%40react-facet) Package within the [Ore UI Framework](https://github.com/Mojang/ore-ui)
+A simple Cypress Framework Definition for Projects using [React Facet](https://github.com/Mojang/ore-ui/tree/main/packages/%40react-facet) Package within the [Ore UI Framework](https://github.com/Mojang/ore-ui)
 
 See the documentation to learn how to author a Framework Definition for your favorite library!
 
