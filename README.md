@@ -1,11 +1,9 @@
-A template to use as a starting point when building a Component Framework Definition.
+An simple Cypress Framework Definition for Projects using [React Facet](https://github.com/Mojang/ore-ui/tree/main/packages/%40react-facet) Package within the [Ore UI Framework](https://github.com/Mojang/ore-ui)
 
-An completed example for [Solid.js](https://www.solidjs.com/) is [available here](https://github.com/lmiller1990/cypress-ct-solid-js).
+See the documentation to learn how to author a Framework Definition for your favorite library!
 
-See [the documentation](https://docs.cypress.io/guides/component-testing/third-party-definitions#List-of-Framework-Definitions) to Learn how to author a Framework Definition for your favorite library!
+Try it
+Requires Cypress 12.7+ (coming late Feb 2023). In your React Facet project:
 
-Once you've written your definition:
-
-- `npm run build` to build it
-- update `name` in `package.json`
-- publish!
+npm install cypress cypress-ct-react-facet
+Open Cypress and click "Component Testing" and it should set everything up for you.
